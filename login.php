@@ -5,6 +5,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="main">
     <div class="login">
         <h2>Inserte su usuario y contrasena</h2>
         <form name="login" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
@@ -15,6 +16,7 @@
                     <td><input type="submit" name="acceso" value="Entrar"></tr>
                 </tr>
         </form>
+    </div>
     </div>
 <?php
     $user= "";
@@ -27,7 +29,7 @@
         }
         else{
             //echo '<script>window.location.replace("index_caso.php");</script>';
-            header("Location: index_caso.php");
+            header("Location: index.php");
     
         }
     }

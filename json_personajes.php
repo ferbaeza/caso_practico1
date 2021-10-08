@@ -7,7 +7,7 @@
                  "dni": "12457984B" ,
                  "altura": 1.96,
                   "peso": 108.3,
-                  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1oZ8wCEMgY6mMIugieylMiZt38prdUCxM-g&usqp=CAU",
+                  "imagen": "ttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1oZ8wCEMgY6mMIugieylMiZt38prdUCxM-g&usqp=CAU",
                   "icono": "",
                   "descripcion":"Jefe de la Orda",
                   "raza": "Orco Negro",

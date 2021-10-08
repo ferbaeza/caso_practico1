@@ -2,48 +2,42 @@
 <html>
 <head>
     <title>Index</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/348ef26ed0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <center>
+    <?php include "header_equipamiento.php" ?>
     <h1>Personajes</h1>
+    <h1 id='_404'>Aqui iran los equipamientos</h1>
+    <h1>Por construir</h1>
+
     <div class="tabla_personajes">
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>dni</th>
-            <th>Altura</th>
-            <th>Peso</th>
-            <th>Imagen</th>
-            <th>Icono</th>
-            <th>Descripcion</th>
-            <th>Tipo</th>
-            <th>Raza</th>
-            <th>Temperamento</th>
-        </tr>
+ 
         
-        <?php 
+        <?php
+            include "class_personajes.php"; 
             include "json_personajes.php";
             $personajes=json_decode($json_personaje);
             //var_dump( $personajes);
-            foreach($personajes as $f) {
-
-                echo "<tr>";
-                echo "<td>" . $f->$id. "</td>";
-                echo "<td>" . $f->nombre . "</td>";
-                echo "<td>" . $f->dni . "</td>";
-                echo "<td>" . $f->altura . "</td>";
-                echo "<td>" . $f->peso . "</td>";
-                echo "<td>" . $f->imagen . "</td>";
-                echo "<td class='fas fa-person-booth'>" . $f->icono . "</td>";
-                echo "<td>" . $f->descripcion . "</td>";
-                echo "<td>" . $f->tipo . "</td>";
-                echo "<td>" . $f->raza . "</td>";
-                echo "<td>" . $f->temperamento . "</td>";
-                echo "<tr>";
+            foreach($personajes as $pe) {
+                if ($pe->tipo == "Orco"){
+                    $orco = new Orco($pe->id, $pe->tipo, $pe->nombre, $pe->dni, $pe->altura, $pe->peso, $pe->imagen, $pe->icono, $pe->descripcion, $pe->raza, $pe->temperamento);
+                    //var_dump($orco);
+                    echo"<div class='orco'>";
+                    echo"<p class='orco_p'> $pe->tipo Nombre $pe->nombre</p>";
+                    echo"<p class='orco_p'>$pe->dni</p><p class='orco_p''>$pe->raza</p>";
+                    echo"<p class='orco_p'>$pe->altura</p><p class='orco_p''>$pe->peso</p>";
+                    echo"<p class='orco_p'>$pe->descripcion</p><p class='orco_p'>$pe->raza</p>";
+                    echo"<p class='orco_p'>$pe->temperamento</p></div>";
+                
+                
+                }
             }
+
 ?>
+</div>
+</center>
 
         </body>
         </html>
