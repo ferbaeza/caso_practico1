@@ -12,7 +12,7 @@
           "icono": "",
           "descripcion": "Perfecta para ensartar",
           "metal": "Acero",
-          "empunadura": "Nogal"
+          "empuñadura": "Nogal"
         },
         {
           "id":2,

@@ -8,60 +8,60 @@
 <body>
     <?php require_once "header_equipamiento.php" ?>
 <center>
-    <h1>Personajes</h1>
+    <h1>Equipamiento</h1>
     <div class="main">
  
         
         <?php
             require_once "class_equipamiento.php"; 
             require_once "json_equipamiento.php";
-            $equipo=json_decode($json_equipo);
-            //var_dump( $eqrsonajes);
-            foreach($equipo as $eq) {
-                if ($eq->tipo == "Espada"){
-                    $espada = new Espada($eq->id, $eq->tipo, $eq->nombre, $eq->antiguedad, $eq->dimension_largo, $eq->dimension_ancho, $eq->imagen, $eq->icono, $eq->descripcion, $eq->metal, $eq->empunadura);
-                    echo"<div class='espada'>";
+            $equipamiento=json_decode($json_equipo);
+            foreach($equipamiento as $e) {
+                if ($e->tipo == "Espada"){
+                    $espada = new Espada($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->raza, $e->temperamento);
+                    var_dump($espada);
+                    echo"<div class='orco'>";
                     echo "<div class='texto'>";
-                    echo"<p class='espada_p'> $eq->tipo  $eq->nombre</p>";
-                    echo"<p class='espada_p'>$eq->antiguedad</p><p class='espada_p''>$eq->metal</p>";
-                    echo"<p class='espada_p'>$eq->dimension_largo</p><p class='espada_p''>$eq->dimension_ancho</p>";
-                    echo"<p class='espada_p'>$eq->empunadura</p><p class='espada_p'>$eq->metal</p>";
-                    echo"<p class='espada_p'>$eq->descripcion</p></div>";
-                    echo "<img src='$eq->imagen' class='top'></div>";                                             
+                    echo"<p class='orco_p'> $e->tipo  $e->nombre</p>";
+                    echo"<p class='orco_p'>$e->dni</p><p class='orco_p''>$e->raza</p>";
+                    echo"<p class='orco_p'>$e->altura</p><p class='orco_p''>$e->peso</p>";
+                    echo"<p class='orco_p'>$e->temperamento</p><p class='orco_p'>$e->raza</p>";
+                    echo"<p class='orco_p'>$e->descripcion</p></div>";
+                    echo "<img src='$e->imagen' class='top'></div>";                                             
                 }
-                if ($eq->tipo == "Arco"){
-                    $arco = new Arco($eq->id, $eq->tipo, $eq->nombre, $eq->antiguedad, $eq->dimension_largo, $eq->dimension_ancho, $eq->imagen, $eq->icono, $eq->descripcion, $eq->orejas, $eq->pelo);
-                    echo"<div class='arco'>";
+                if ($e->tipo == "Elfo"){
+                    $elfo = new Elfo($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->orejas, $e->pelo);
+                    echo"<div class='elfo'>";
                     echo "<div class='texto'>";
-                    echo"<p class='arco_p'> $eq->tipo  $eq->nombre</p>";
-                    echo"<p class='arco_p'>$eq->antiguedad</p><p class='arco_p''>$eq->metal</p>";
-                    echo"<p class='arco_p'>$eq->dimension_largo</p><p class='arco_p''>$eq->dimension_ancho</p>";
-                    echo"<p class='arco_p'>$eq->orejas</p><p class='arco_p'>$eq->pelo</p>";
-                    echo"<p class='arco_p'>$eq->descripcion</p></div>";   
-                    echo "<img src='$eq->imagen' class='top'></div>";                                             
-                    //echo "<div class='imagen>'<p id='imagen'><img src='$eq->imagen'></p></div></div>";                             
+                    echo"<p class='elfo_p'> $e->tipo  $e->nombre</p>";
+                    echo"<p class='elfo_p'>$e->dni</p><p class='elfo_p''>$e->raza</p>";
+                    echo"<p class='elfo_p'>$e->altura</p><p class='elfo_p''>$e->peso</p>";
+                    echo"<p class='elfo_p'>$e->orejas</p><p class='elfo_p'>$e->pelo</p>";
+                    echo"<p class='elfo_p'>$e->descripcion</p></div>";   
+                    echo "<img src='$e->imagen' class='top'></div>";                                             
+                    //echo "<div class='imagen>'<p id='imagen'><img src='$e->imagen'></p></div></div>";                             
                 }
-                if ($eq->tipo == "Casco"){
-                    $casco = new Casco($eq->id, $eq->tipo, $eq->nombre, $eq->antiguedad, $eq->dimension_largo, $eq->dimension_ancho, $eq->imagen, $eq->icono, $eq->descripcion, $eq->reino, $eq->codicia);
-                    echo"<div class='casco'>";
+                if ($e->tipo == "Humano"){
+                    $humano = new Humano($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->reino, $e->codicia);
+                    echo"<div class='humano'>";
                     echo "<div class='texto'>";
-                    echo"<p class='casco_p'> $eq->tipo  $eq->nombre</p>";
-                    echo"<p class='casco_p'>$eq->antiguedad</p><p class='casco_p''>$eq->metal</p>";
-                    echo"<p class='casco_p'>$eq->dimension_largo</p><p class='casco_p''>$eq->dimension_ancho</p>";
-                    echo"<p class='casco_p'>$eq->reino</p><p class='casco_p'>$eq->codicia</p>";
-                    echo"<p class='casco_p'>$eq->descripcion</p></div>"; 
-                    echo "<img src='$eq->imagen' class='top'></div>";                                             
+                    echo"<p class='huma_p'> $e->tipo  $e->nombre</p>";
+                    echo"<p class='huma_p'>$e->dni</p><p class='huma_p''>$e->raza</p>";
+                    echo"<p class='huma_p'>$e->altura</p><p class='huma_p''>$e->peso</p>";
+                    echo"<p class='huma_p'>$e->reino</p><p class='huma_p'>$e->codicia</p>";
+                    echo"<p class='huma_p'>$e->descripcion</p></div>"; 
+                    echo "<img src='$e->imagen' class='top'></div>";                                             
                 }
-                if ($eq->tipo == "Hacha"){
-                    $hacha = new Hacha($eq->id, $eq->tipo, $eq->nombre, $eq->antiguedad, $eq->dimension_largo, $eq->dimension_ancho, $eq->imagen, $eq->icono, $eq->descripcion, $eq->debilidad, $eq->hobbie);
-                    echo"<div class='hacha'>";
+                if ($e->tipo == "Enano"){
+                    $enano = new Enano($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->debilidad, $e->hobbie);
+                    echo"<div class='enano'>";
                     echo "<div class='texto'>";
-                    echo"<p class='hacha_p'> $eq->tipo  $eq->nombre</p>";
-                    echo"<p class='hacha_p'>$eq->antiguedad</p><p class='hacha_p''>$eq->metal</p>";
-                    echo"<p class='hacha_p'>$eq->dimension_largo</p><p class='hacha_p''>$eq->dimension_ancho</p>";
-                    echo"<p class='hacha_p'>$eq->debilidad</p><p class='hacha_p'>$eq->hobbie</p>";
-                    echo"<p class='hacha_p'>$eq->descripcion</p></div>";   
-                    echo "<img src='$eq->imagen' class='top'></div>";                                             
+                    echo"<p class='enano_p'> $e->tipo  $e->nombre</p>";
+                    echo"<p class='enano_p'>$e->dni</p><p class='enano_p''>$e->raza</p>";
+                    echo"<p class='enano_p'>$e->altura</p><p class='enano_p''>$e->peso</p>";
+                    echo"<p class='enano_p'>$e->debilidad</p><p class='enano_p'>$e->hobbie</p>";
+                    echo"<p class='enano_p'>$e->descripcion</p></div>";   
+                    echo "<img src='$e->imagen' class='top'></div>";                                             
                 }            
             
             }
