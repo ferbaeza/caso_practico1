@@ -13,7 +13,7 @@
                 <tr>
                     <td><label>User </label><input id="row" name="user" size="10" placeholder="Enter Username"></tr>
                     <td><label>Password </label><input id="row" name="paswd" size="10" placeholder="Enter Password"></tr>
-                    <td><input type="submit" name="acceso" value="Entrar"></tr>
+                    <td><input id="but" type="submit" name="acceso" value="Entrar"></tr>
                 </tr>
         </form>
     </div>
