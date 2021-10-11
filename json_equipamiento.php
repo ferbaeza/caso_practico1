@@ -8,7 +8,7 @@
           "dimension_largo": 1.63,
           "dimension_ancho": 0.45,
           "peso": 15.1,
-          "imagen": "https://media.istockphoto.com/photos/fantasy-sword-picture-id462007369",
+          "imagen": "https://armasmedievales.es/1069-thickbox_default/espada-templarios-plata-doro.jpg",
           "icono": "",
           "descripcion": "Perfecta para ensartar",
           "metal": "Acero",
@@ -96,7 +96,7 @@
           "icono": "",
           "descripcion": "Aniquiladorar",
           "metal": "Hierro y Acero",
-          "empuñadura": "Oro"
+          "empunadura": "Oro"
         },
         {
           "id":8,
@@ -110,7 +110,7 @@
           "icono": "",
           "descripcion": "Destructora y Manejable",
           "metal": "Hierro",
-          "empuñadura": "Pino"
+          "empunadura": "Pino"
         }
        
        ]'
