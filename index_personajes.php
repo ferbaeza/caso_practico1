@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/348ef26ed0.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/348ef26ed0.js" crossorigin="anonymous"></script>-->
     <title>Personajes</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
                     echo"<div class='elfo'>";
                     echo "<div class='texto'>";
                     echo"<p class='elfo_p'> $pe->tipo  $pe->nombre</p>";
-                    echo"<p class='elfo_p'>$pe->dni</p><p class='elfo_p''>$pe->raza</p>";
+                    echo"<p class='elfo_p'>$pe->dni</p><p class='elfo_p''>Elfo</p>";
                     echo"<p class='elfo_p'>$pe->altura</p><p class='elfo_p''>$pe->peso</p>";
                     echo"<p class='elfo_p'>$pe->orejas</p><p class='elfo_p'>$pe->pelo</p>";
                     echo"<p class='elfo_p'>$pe->descripcion</p></div>";   

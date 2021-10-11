@@ -2,7 +2,6 @@
 <html>
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/348ef26ed0.js" crossorigin="anonymous"></script>
     <title>Personajes</title>
 </head>
 <body>
@@ -18,8 +17,8 @@
             $equipamiento=json_decode($json_equipo);
             foreach($equipamiento as $e) {
                 if ($e->tipo == "Espada"){
-                    $espada = new Espada($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->raza, $e->temperamento);
-                    var_dump($espada);
+                    $arco = new Arco($e->id, $e->tipo, $e->nombre);
+                    var_dump($arco);
                     echo"<div class='orco'>";
                     echo "<div class='texto'>";
                     echo"<p class='orco_p'> $e->tipo  $e->nombre</p>";
@@ -28,7 +27,7 @@
                     echo"<p class='orco_p'>$e->temperamento</p><p class='orco_p'>$e->raza</p>";
                     echo"<p class='orco_p'>$e->descripcion</p></div>";
                     echo "<img src='$e->imagen' class='top'></div>";                                             
-                }
+                }/*S
                 if ($e->tipo == "Elfo"){
                     $elfo = new Elfo($e->id, $e->tipo, $e->nombre, $e->dni, $e->altura, $e->peso, $e->imagen, $e->icono, $e->descripcion, $e->orejas, $e->pelo);
                     echo"<div class='elfo'>";
@@ -62,7 +61,7 @@
                     echo"<p class='enano_p'>$e->debilidad</p><p class='enano_p'>$e->hobbie</p>";
                     echo"<p class='enano_p'>$e->descripcion</p></div>";   
                     echo "<img src='$e->imagen' class='top'></div>";                                             
-                }            
+                }   */         
             
             }
 
@@ -70,5 +69,5 @@
 </div>
 </center>
 
-        </body>
-        </html>
+</body>
+</html>

@@ -30,6 +30,7 @@ body{background-color: rgb(58, 95, 95);}
     position: relative;
     display: inline-block;
     margin: 50px;
+    font-size: 19px;
 }
 img{
     border-radius: 7%;

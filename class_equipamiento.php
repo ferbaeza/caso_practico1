@@ -22,37 +22,34 @@ function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimens
     $this->imagen = $imagen;
     $this->icono = $icono;
     $this->descripcion = $descripcion;
-}
+}/*
 function CalcularAntiguedad (){//REVISAR ESTA FUNCION 
     $fecha_nacimiento = new DateTime();
     $actual = new DateTime();
     $antiguedad = $actual->diff($fecha_nacimiento);  
     echo $antiguedad->y;
-}
+}*/
 }
 
- class  Espada extends Equipamiento{
+class Espada extends Equipamiento{
     public $metal;
     public $empunadura;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $metal, $empunadura){
        parent::__construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->metal = $metal;
         $this->empunadura = $empunadura;
- }
-    
-
+    }
 }
-class  Arco extends Equipamiento{
+class Arco extends Equipamiento{
     public $cuerda;
     public $madera;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $cuerda, $madera){
        parent::__construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->cuerda = $cuerda;
         $this->madera = $madera;
-   
     }
 }
-class  Casco extends Equipamiento{
+class Casco extends Equipamiento{
     public $forma;
     public $vision;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $forma, $vision){
@@ -61,14 +58,13 @@ class  Casco extends Equipamiento{
         $this->vision = $vision;
     }
 }  
-class  Hacha extends Equipamiento{
+class Hacha extends Equipamiento{
     public $hoja ;
     public $mango;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $hoja, $mango){
        parent::__construct($id, $tipo, $nombre,$antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->hoja = $hoja;
         $this->mango = $mango;
-    
     }
 }
 
