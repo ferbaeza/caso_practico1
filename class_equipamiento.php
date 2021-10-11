@@ -22,34 +22,60 @@ function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimens
     $this->imagen = $imagen;
     $this->icono = $icono;
     $this->descripcion = $descripcion;
-}/*
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
 function CalcularAntiguedad (){//REVISAR ESTA FUNCION 
     $fecha_nacimiento = new DateTime();
     $actual = new DateTime();
     $antiguedad = $actual->diff($fecha_nacimiento);  
     echo $antiguedad->y;
-}*/
+<<<<<<< HEAD
+}
 }
 
 class Espada extends Equipamiento{
+=======
+}
+}
+
+ class  Espada extends Equipamiento{
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
     public $metal;
     public $empunadura;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $metal, $empunadura){
        parent::__construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->metal = $metal;
         $this->empunadura = $empunadura;
+<<<<<<< HEAD
     }
 }
 class Arco extends Equipamiento{
+=======
+ }
+    
+
+}
+class  Arco extends Equipamiento{
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
     public $cuerda;
     public $madera;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $cuerda, $madera){
        parent::__construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->cuerda = $cuerda;
         $this->madera = $madera;
+<<<<<<< HEAD
     }
 }
 class Casco extends Equipamiento{
+=======
+   
+    }
+}
+class  Casco extends Equipamiento{
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
     public $forma;
     public $vision;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $forma, $vision){
@@ -58,13 +84,21 @@ class Casco extends Equipamiento{
         $this->vision = $vision;
     }
 }  
+<<<<<<< HEAD
 class Hacha extends Equipamiento{
+=======
+class  Hacha extends Equipamiento{
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
     public $hoja ;
     public $mango;
     function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $hoja, $mango){
        parent::__construct($id, $tipo, $nombre,$antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
         $this->hoja = $hoja;
         $this->mango = $mango;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 795db6002054ecbd0d5b505b19a50d076bf920c0
     }
 }
 
