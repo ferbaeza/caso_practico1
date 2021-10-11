@@ -8,7 +8,7 @@
 <body>
     <?php require_once "header_personajes.php" ?>
 <center>
-    <h1>Personajes</h1>
+    <h3 id='titu'>Personajes</h3>
     <div class="main">
  
         

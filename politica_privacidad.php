@@ -10,7 +10,7 @@
 <body>
     <?php require_once "header.php"?>
     <div class="main_dos">
-        <h1>Lorem Ipsum</h1>
+        <h3 id='titu'>Lorem Ipsum Politica de Privacidad</h3>
         <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
             "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."</h3>
 

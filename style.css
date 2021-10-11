@@ -180,9 +180,13 @@ label{
     width: 80%;
     margin: 0 auto;
 }
-.main_dos h1, h3{
+.main_dos h3{
     color: cornsilk;
     text-align: center;
+}
+#titu{
+    font-size: 33px;
+    color: cornsilk;
 }
 .main_dos p{
     text-align: left;
