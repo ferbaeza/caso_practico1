@@ -1,16 +1,17 @@
 <?php
 class Equipamiento {
-Public $id;
-public $tipo;
-public $nombre;
-public $antiguedad;
-public $dimension_largo;
-public $dimension_ancho;
-public $peso;
-public $imagen;
-public $icono;
-public $descripcion;
+    public $id;
+    public $tipo;
+    public $nombre;
+    public $antiguedad;
+    public $dimension_largo;
+    public $dimension_ancho;
+    public $peso;
+    public $imagen;
+    public $icono;
+    public $descripcion;
 
+<<<<<<< HEAD
 function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion){
     $this->id = $id;
     $this->tipo = $tipo;
@@ -34,6 +35,26 @@ function CalcularAntiguedad (){//REVISAR ESTA FUNCION
     echo $antiguedad->y;
 <<<<<<< HEAD
 }
+=======
+    function __construct($id, $tipo, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion){
+        $this->id = $id;
+        $this->tipo = $tipo;
+        $this->nombre = $nombre;
+        $this->antiguedad = $antiguedad;
+        $this->dimension_largo = $dimension_largo;
+        $this->dimension_ancho = $dimension_ancho;
+        $this->peso = $peso;
+        $this->imagen = $imagen;
+        $this->icono = $icono;
+        $this->descripcion = $descripcion;
+    }/*
+    function CalcularAntiguedad (){//REVISAR ESTA FUNCION 
+        $fecha_nacimiento = new DateTime();
+        $actual = new DateTime();
+        $antiguedad = $actual->diff($fecha_nacimiento);  
+        echo $antiguedad->y;
+    }*/
+>>>>>>> fer
 }
 
 class Espada extends Equipamiento{

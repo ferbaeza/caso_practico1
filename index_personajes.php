@@ -8,7 +8,7 @@
 <body>
     <?php require_once "header_personajes.php" ?>
 <center>
-    <h1>Personajes</h1>
+    <h3 id='titu'>Personajes</h3>
     <div class="main">
  
         
@@ -23,7 +23,7 @@
                     //var_dump($orco);
                     echo"<div class='orco'>";
                     echo "<div class='texto'>";
-                    echo"<p class='orco_p'> $pe->tipo  $pe->nombre</p>";
+                    echo"<p class='orco_p'><h3 id='titu2'> $pe->tipo  $pe->nombre</h3></p>";
                     echo"<p class='orco_p'>$pe->dni</p><p class='orco_p''>$pe->raza</p>";
                     echo"<p class='orco_p'>$pe->altura</p><p class='orco_p''>$pe->peso</p>";
                     echo"<p class='orco_p'>$pe->temperamento</p><p class='orco_p'>$pe->raza</p>";
@@ -34,7 +34,7 @@
                     $elfo = new Elfo($pe->id, $pe->tipo, $pe->nombre, $pe->dni, $pe->altura, $pe->peso, $pe->imagen, $pe->icono, $pe->descripcion, $pe->orejas, $pe->pelo);
                     echo"<div class='elfo'>";
                     echo "<div class='texto'>";
-                    echo"<p class='elfo_p'> $pe->tipo  $pe->nombre</p>";
+                    echo"<p class='elfo_p'><h3 id='titu2'> $pe->tipo  $pe->nombre</h3></p>";
                     echo"<p class='elfo_p'>$pe->dni</p><p class='elfo_p''>Elfo</p>";
                     echo"<p class='elfo_p'>$pe->altura</p><p class='elfo_p''>$pe->peso</p>";
                     echo"<p class='elfo_p'>$pe->orejas</p><p class='elfo_p'>$pe->pelo</p>";
@@ -46,7 +46,7 @@
                     $humano = new Humano($pe->id, $pe->tipo, $pe->nombre, $pe->dni, $pe->altura, $pe->peso, $pe->imagen, $pe->icono, $pe->descripcion, $pe->reino, $pe->codicia);
                     echo"<div class='humano'>";
                     echo "<div class='texto'>";
-                    echo"<p class='huma_p'> $pe->tipo  $pe->nombre</p>";
+                    echo"<p class='huma_p'><h3 id='titu2'> $pe->tipo  $pe->nombre</h3></p>";
                     echo"<p class='huma_p'>$pe->dni</p><p class='huma_p''>$pe->raza</p>";
                     echo"<p class='huma_p'>$pe->altura</p><p class='huma_p''>$pe->peso</p>";
                     echo"<p class='huma_p'>$pe->reino</p><p class='huma_p'>$pe->codicia</p>";
@@ -57,7 +57,7 @@
                     $enano = new Enano($pe->id, $pe->tipo, $pe->nombre, $pe->dni, $pe->altura, $pe->peso, $pe->imagen, $pe->icono, $pe->descripcion, $pe->debilidad, $pe->hobbie);
                     echo"<div class='enano'>";
                     echo "<div class='texto'>";
-                    echo"<p class='enano_p'> $pe->tipo  $pe->nombre</p>";
+                    echo"<p class='enano_p'><h3 id='titu2'> $pe->tipo  $pe->nombre</h3></p>";
                     echo"<p class='enano_p'>$pe->dni</p><p class='enano_p''>$pe->raza</p>";
                     echo"<p class='enano_p'>$pe->altura</p><p class='enano_p''>$pe->peso</p>";
                     echo"<p class='enano_p'>$pe->debilidad</p><p class='enano_p'>$pe->hobbie</p>";
