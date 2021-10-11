@@ -1,5 +1,8 @@
 h1{text-align: center;}
-body{background-color: rgb(58, 95, 95); width: 100%;}
+body{
+    background-color: rgb(58, 95, 95); 
+    width: 100%;
+}
 
 .main{
     display: flex;
@@ -248,4 +251,17 @@ img{
 }
 .foto_uno:hover .personajes {
     visibility: visible;
+}
+.footer_case{
+    width: min-content;
+    height: min-content;
+    margin: 0 auto;
+    position:fixed;
+}
+#footer_ico{
+    width: 40px;
+    height: 40px;
+}
+#li_footer, #ul_footer{
+    background-color: transparent;
 }

@@ -25,5 +25,11 @@
             <h2 class="equipamiento">Equipamiento</p>
         </div>
     </div>
+<footer>
+<?php
+    include "footer.php";
+
+?>
+</footer>
 </body>
 </html>
